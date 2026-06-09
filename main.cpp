@@ -11,6 +11,12 @@ using namespace std;
 void selectionSort(vector<Region>& regions)
 {
   int n = regions.size();
+  for (int i = 0; i < n - 1; i++) {
+    int minIndex = i;
+    for (int j = i + 1; j < n; j++) {
+      if (regions[j])
+    }
+  }
 }
 
 int main()
