@@ -135,4 +135,6 @@ int main()
   cout << "Took " << static_cast<double>(end - start) / CLOCKS_PER_SEC
        << " seconds to selection sort.\n"
        << endl;
+
+  cout << "First 5 regions after sorting by ID:" << endl;
 }
