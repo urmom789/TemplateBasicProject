@@ -119,4 +119,11 @@ int main()
       }
     }
   }
+  regionFile.close();
+
+  cout << "First 5 regions:" << endl;
+  for (int i = 0; i < 5 && i < regions.size(); i++ {
+         cout regions[i].id << " | " << regions[i].city << " | "
+                            << regions[i].state << endl;
+       })
 }
