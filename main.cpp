@@ -139,7 +139,9 @@ int main()
   cout << "First 5 regions after sorting by ID:" << endl;
 
   for (int i = 0; i < 5 && i < regions.size(); i++) {
-    cout regions[i].id << " | " << regions[i].city << " | " << regions[i].state
-                       << endl;
+    cout << regions[i].id << " | " << regions[i].city << " | "
+         << regions[i].state << endl;
   }
+
+  cout << "-----------------------------Part 3----------------------------\n";
 }
