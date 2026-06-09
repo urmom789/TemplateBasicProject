@@ -8,6 +8,11 @@
 
 using namespace std;
 
+void selectionSort(vector<Region>& regions)
+{
+  int n = regions.size();
+}
+
 int main()
 {
   cout << "Hello world" << endl;
