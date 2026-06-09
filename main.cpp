@@ -168,4 +168,25 @@ int main()
   } else {
     cout << "Region 36768 not found" << endl;
   }
+
+  cout << "-----------------------------Part 5----------------------------\n";
+
+  vector<PriceRecord> prices;
+  ifstream pricesFile("ZILLOW_DATA.csv")
+
+      if (!pricesFile.is_open())
+  {
+    cout << "Error opening file" << endl;
+    return 1;
+  }
+
+  while (getline(pricesFile, line)) {
+    if (!line.empty()) {
+      try {
+        pricesFile.push_back(parseRegion(line));
+      } catch (...) {
+      }
+    }
+  }
+  pricesFile.close();
 }
