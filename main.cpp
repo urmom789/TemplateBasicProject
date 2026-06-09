@@ -24,6 +24,14 @@ void selectionSort(vector<Region>& regions)
   }
 }
 
+void merge(vector<Region>& regions, int left, int mid, int right)
+{
+  int n1 = mid - left + 1;
+  int n2 = right - mid;
+
+  vector <
+}
+
 int main()
 {
   cout << "Hello world" << endl;
