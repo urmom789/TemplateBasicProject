@@ -67,7 +67,10 @@ void mergeSortRec(vector<Region>& regions, int left, int right)
 {
   if (left >= right)
     return;
-  int
+  int mid = left + (right - left) / 2;
+  mergeSortRec(regions, left, mid);
+  mergeSortRec(regions, mid + 1, right);
+  merge(regions, left, mid, right);
 }
 
 int main()
