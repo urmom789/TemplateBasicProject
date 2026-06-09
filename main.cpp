@@ -200,19 +200,19 @@ int main()
   getline(cin, targetCity);
 
   start = clock();
-  int martchCount = 0;
+  int matchCount = 0;
 
   for (const PriceRecord& p : prices) {
     Region r = binaryFind(regions, p.regionId);
     if (r.id != -1 && r.city == targetCity) {
       cout << r.city << ", " << r.state << " | " << p.date << " | $" << fixed
            << setprecision(2) << p.price << endl;
-      martchCount++;
+      matchCount++;
     }
   }
   end = clock();
 
-  cout << "\nFound " << martchCount << " records for " << targetCity << endl;
+  cout << "\nFound " << matchCount << " records for " << targetCity << endl;
   cout << "Took " << static_cast<double>(end - start) / CLOCKS_PER_SEC
        << " seconds to complete the search loop." << endl;
 }
