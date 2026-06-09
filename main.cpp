@@ -29,7 +29,10 @@ void merge(vector<Region>& regions, int left, int mid, int right)
   int n1 = mid - left + 1;
   int n2 = right - mid;
 
-  vector <
+  vector<Region> L(n1), R(n2);
+  for (int i = 0; i < n1; i++) {
+    L[i] = regions[left + i];
+  }
 }
 
 int main()
