@@ -157,4 +157,11 @@ int main()
     cout << regionsByName[i].id << " | " << regionsByName[i].city << " | "
          << regionsByName[i].state << endl;
   }
+
+  cout << "-----------------------------Part 4----------------------------\n";
+
+  Region foundRegion = binaryFind(regions, 36768);
+  if (foundRegion.id != -1) {
+    cout << Found
+  }
 }
