@@ -195,7 +195,7 @@ int main()
          << setprecision(2) << prices[i].price << endl;
   }
 
-  cout << "-----------------------------Part 5----------------------------\n";
+  cout << "-----------------------------Part 6----------------------------\n";
   string targetCity;
   getline(cin, targetCity);
 
