@@ -197,6 +197,7 @@ int main()
 
   cout << "-----------------------------Part 6----------------------------\n";
   string targetCity;
+  cout << "Enter city name: ";
   getline(cin, targetCity);
 
   start = clock();
