@@ -102,4 +102,21 @@ Region binaryFind(const vector<Region>& regions, int id)
 int main()
 {
   cout << "-----------------------------Part 1----------------------------\n";
+  vector<Region> regions;
+  ifstream regionFile("ZILLOW_REGIONS.csv");
+  string line;
+
+  if (!regionFile.is_open()) {
+    cout << "Error opening file" << endl;
+    return 1;
+  }
+
+  while (getline(regionFile, line)) {
+    if (!line.empty()) {
+      try {
+        regions.push_back(parseRegion(line));
+      } catch (...) {
+      }
+    }
+  }
 }
