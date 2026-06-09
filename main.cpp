@@ -56,6 +56,11 @@ void merge(vector<Region>& regions, int left, int mid, int right)
     i++;
     k++;
   }
+  while (j < n2) {
+    regions[k] = R[j];
+    j++;
+    k++;
+  }
 }
 
 int main()
