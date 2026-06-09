@@ -126,4 +126,9 @@ int main()
     cout << regions[i].id << " | " << regions[i].city << " | "
          << regions[i].state << endl;
   }
+
+  cout << "-----------------------------Part 2----------------------------\n";
+  clock_t start = clock();
+  selectionSort(regions);
+  clock_t end = clock();
 }
