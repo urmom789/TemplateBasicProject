@@ -210,4 +210,9 @@ int main()
       martchCount++;
     }
   }
+  end = clock();
+
+  cout << "\nFound " << martchCount << " records for " << targetCity << endl;
+  cout << "Took " << static_cast<double>(end - start) / CLOCKS_PER_SEC
+       << " seconds to complete the search loop." << endl;
 }
