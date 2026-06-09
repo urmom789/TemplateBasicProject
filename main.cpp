@@ -188,4 +188,9 @@ int main()
     }
   }
   pricesFile.close();
+
+  cout << "First 5 price records:" << endl;
+  for (int i = 0; i < 5 && i < prices.size(); i++) {
+    cout
+  }
 }
