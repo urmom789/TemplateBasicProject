@@ -172,10 +172,9 @@ int main()
   cout << "-----------------------------Part 5----------------------------\n";
 
   vector<PriceRecord> prices;
-  ifstream pricesFile("ZILLOW_DATA.csv")
+  ifstream pricesFile("ZILLOW_DATA.csv");
 
-      if (!pricesFile.is_open())
-  {
+  if (!pricesFile.is_open()) {
     cout << "Error opening file" << endl;
     return 1;
   }
