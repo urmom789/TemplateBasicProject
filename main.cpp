@@ -144,4 +144,9 @@ int main()
   }
 
   cout << "-----------------------------Part 3----------------------------\n";
+  vector<Region> regionsByName = regions;
+
+  start = clock();
+  mergeSort(regionsByName);
+  end = clock();
 }
