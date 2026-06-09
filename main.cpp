@@ -162,6 +162,10 @@ int main()
 
   Region foundRegion = binaryFind(regions, 36768);
   if (foundRegion.id != -1) {
-    cout << Found
+    cout << "Found region 36768: " << foundRegion.id << " | "
+         << foundRegion.city << " | " << foundRegion.state << endl;
+
+  } else {
+    cout << "Region 36768 not found" << endl
   }
 }
