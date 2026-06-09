@@ -98,7 +98,8 @@ Region binaryFind(const vector<Region>& regions, int id)
   }
   return {-1, "Invalid", "Invalid"};
 }
+
 int main()
 {
-  cout << "Hello world" << endl;
+  cout << "-----------------------------Part 1----------------------------\n";
 }
