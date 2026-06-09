@@ -51,7 +51,11 @@ void merge(vector<Region>& regions, int left, int mid, int right)
     }
     k++;
   }
-  while (i <)
+  while (i < n1) {
+    regions[k] = L[i];
+    i++;
+    k++;
+  }
 }
 
 int main()
