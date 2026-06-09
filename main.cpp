@@ -10,7 +10,7 @@ using namespace std;
 
 void selectionSort(vector<Region>& regions)
 {
-  int n = regions.size();
+  int n = static_cast<int>(regions.size());
   for (int i = 0; i < n - 1; i++) {
     int minIndex = i;
     for (int j = i + 1; j < n; j++) {
@@ -76,14 +76,14 @@ void mergeSortRec(vector<Region>& regions, int left, int right)
 void mergeSort(vector<Region>& regions)
 {
   if (!regions.empty()) {
-    mergeSortRec(regions, 0, regions.size() - 1);
+    mergeSortRec(regions, 0, static_cast<int>(regions.size() - 1));
   }
 }
 
 Region binaryFind(const vector<Region>& regions, int id)
 {
   int left = 0;
-  int right = regions.size() - 1;
+  int right = static_cast<int>(regions.size()) - 1;
 
   while (left <= right) {
     int mid = left + (right - left) / 2;
@@ -122,7 +122,7 @@ int main()
   regionFile.close();
 
   cout << "First 5 regions:" << endl;
-  for (int i = 0; i < 5 && i < regions.size(); i++) {
+  for (int i = 0; i < 5 && i < static_cast<int>(regions.size()); i++) {
     cout << regions[i].id << " | " << regions[i].city << " | "
          << regions[i].state << endl;
   }
@@ -138,7 +138,7 @@ int main()
 
   cout << "First 5 regions after sorting by ID:" << endl;
 
-  for (int i = 0; i < 5 && i < regions.size(); i++) {
+  for (int i = 0; i < 5 && i < static_cast<int>(regions.size()); i++) {
     cout << regions[i].id << " | " << regions[i].city << " | "
          << regions[i].state << endl;
   }
