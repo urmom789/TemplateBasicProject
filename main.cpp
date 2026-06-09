@@ -153,7 +153,7 @@ int main()
   cout << "Took " << static_cast<double>(end - start) / CLOCKS_PER_SEC
        << " seconds to merge sort.\n";
   cout << "First 5 regions after sorting by city:" << endl;
-  for (int i = 0; i < 5 && i < regionsByName.size(); i++) {
+  for (int i = 0; i < 5 && i < static_cast<int>(regionsByName.size()); i++) {
     cout << regionsByName[i].id << " | " << regionsByName[i].city << " | "
          << regionsByName[i].state << endl;
   }
@@ -190,7 +190,7 @@ int main()
   pricesFile.close();
 
   cout << "First 5 price records:" << endl;
-  for (int i = 0; i < 5 && i < prices.size(); i++) {
+  for (int i = 0; i < 5 && i < static_cast<int>(prices.size()); i++) {
     cout << prices[i].regionId << " | " << prices[i].date << " | $" << fixed
          << setprecision(2) << prices[i].price << endl;
   }
