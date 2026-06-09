@@ -73,11 +73,17 @@ void mergeSortRec(vector<Region>& regions, int left, int right)
   merge(regions, left, mid, right);
 }
 
-mergeSort(vector<Region>& regions)
+void mergeSort(vector<Region>& regions)
 {
   if (!regions.empty()) {
     mergeSortRec(regions, 0, regions.size() - 1);
   }
+}
+
+Region binaryFind(const vector<Region>& regions, int id)
+{
+  int left = 0;
+  int right = regions.size() - 1;
 }
 int main()
 {
