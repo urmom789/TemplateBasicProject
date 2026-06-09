@@ -166,6 +166,6 @@ int main()
          << foundRegion.city << " | " << foundRegion.state << endl;
 
   } else {
-    cout << "Region 36768 not found" << endl
+    cout << "Region 36768 not found" << endl;
   }
 }
