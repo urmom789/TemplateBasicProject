@@ -182,7 +182,7 @@ int main()
   while (getline(pricesFile, line)) {
     if (!line.empty()) {
       try {
-        pricesFile.push_back(parseRegion(line));
+        prices.push_back(parseRegion(line));
       } catch (...) {
       }
     }
