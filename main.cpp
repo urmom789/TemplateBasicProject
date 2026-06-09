@@ -201,4 +201,11 @@ int main()
 
   start = clock();
   int martchCount = 0;
+
+  for (const PriceRecord& p : prices) {
+    Region r = binaryFind(regions, p.regionId);
+    if (r.id != -1 && r.city == targetCity) {
+      cout << r.
+    }
+  }
 }
