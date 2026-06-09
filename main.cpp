@@ -63,6 +63,13 @@ void merge(vector<Region>& regions, int left, int mid, int right)
   }
 }
 
+void mergeSortRec(vector<Region>& regions, int left, int right)
+{
+  if (left >= right)
+    return;
+  int
+}
+
 int main()
 {
   cout << "Hello world" << endl;
