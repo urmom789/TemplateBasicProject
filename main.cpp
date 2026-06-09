@@ -41,7 +41,17 @@ void merge(vector<Region>& regions, int left, int mid, int right)
   int j = 0;
   int k = left;
 
-  while
+  while (i < n1 && j < n2) {
+    if (L[i].city <= R[j].city) {
+      regions[k] = L[i];
+      i++;
+    } else {
+      regions[k] = R[j];
+      j++;
+    }
+    k++;
+  }
+  while (i <)
 }
 
 int main()
