@@ -73,6 +73,12 @@ void mergeSortRec(vector<Region>& regions, int left, int right)
   merge(regions, left, mid, right);
 }
 
+mergeSort(vector<Region>& regions)
+{
+  if (!regions.empty()) {
+    mergeSortRec(regions, 0, regions.size() - 1);
+  }
+}
 int main()
 {
   cout << "Hello world" << endl;
