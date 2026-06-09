@@ -131,4 +131,8 @@ int main()
   clock_t start = clock();
   selectionSort(regions);
   clock_t end = clock();
+
+  cout << "Took " << static_cast<double>(end - start) / CLOCKS_PER_SEC
+       << " seconds to selection sort.\n"
+       << endl;
 }
