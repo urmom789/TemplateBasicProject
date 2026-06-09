@@ -33,6 +33,9 @@ void merge(vector<Region>& regions, int left, int mid, int right)
   for (int i = 0; i < n1; i++) {
     L[i] = regions[left + i];
   }
+  for (int j = 0; j < n2; j++) {
+    R[j] = regions[mid + 1 + j];
+  }
 }
 
 int main()
