@@ -191,6 +191,7 @@ int main()
 
   cout << "First 5 price records:" << endl;
   for (int i = 0; i < 5 && i < prices.size(); i++) {
-    cout
+    cout << prices[i].regionId << " | " << prices[i].date << " | $" << fixed
+         << setprecision(2) << prices[i].price << endl;
   }
 }
