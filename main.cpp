@@ -90,8 +90,13 @@ Region binaryFind(const vector<Region>& regions, int id)
     if (regions[mid].id == id) {
       return regions[mid];
     }
-    if (regions)
+    if (regions[mid].id < id) {
+      left = mid + 1;
+    } else {
+      right = mid - 1;
+    }
   }
+  return {-1, "Invalid", "Invalid"};
 }
 int main()
 {
