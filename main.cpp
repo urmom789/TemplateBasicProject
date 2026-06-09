@@ -149,4 +149,12 @@ int main()
   start = clock();
   mergeSort(regionsByName);
   end = clock();
+
+  cout << "Took " << static_cast<double>(end - start) / CLOCKS_PER_SEC
+       << " seconds to merge sort.\n";
+  cout << "First 5 regions after sorting by city:" << endl;
+  for (int i = 0; i < 5 && i < regionsByName.size(); i++) {
+    cout << regionsByName[i].id << " | " << regionsByName[i].city << " | "
+         << regionsByName[i].state << endl;
+  }
 }
